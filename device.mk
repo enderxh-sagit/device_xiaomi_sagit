@@ -33,10 +33,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
-
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+    
+# Miui Camera
+$(call inherit-product, device/xiaomi/miuicamera/miuicamera.mk)
 
 # Input
 PRODUCT_COPY_FILES += \
